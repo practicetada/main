@@ -29,4 +29,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo hello from octo repo!!!!!!!!!!1
+          echo  running in repo:  ${{ inputs.repo-name }}
           echo test, and deploy your project.
+          
