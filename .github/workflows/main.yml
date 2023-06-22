@@ -4,13 +4,6 @@ name: CI
 
 on:
   workflow_call:
-    inputs:
-      config-path:
-        required: true
-        type: string
-#     secrets:
-#       envPAT:
-#         required: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
