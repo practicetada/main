@@ -36,3 +36,4 @@ jobs:
         run: | 
           ls -la .github
           bash .github/scripts/test.sh
+          practicetada/main/.github/scripts/test.sh@main
