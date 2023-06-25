@@ -33,6 +33,8 @@ jobs:
           echo test, and deploy your project.
       
       - name: test if scripts are working
-        run: ./.github/scripts/test.sh
-        
+        run: | 
+          ls -la
+          bash .github/scripts/test.sh
+
           
