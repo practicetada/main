@@ -34,7 +34,5 @@ jobs:
       
       - name: test if scripts are working
         run: | 
-          ls -la
+          ls -la .github
           bash .github/scripts/test.sh
-
-          
