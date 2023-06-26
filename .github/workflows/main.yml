@@ -3,6 +3,32 @@
 name: CI
 
 on:
+  workflow_dispatch:
+    inputs:
+      BUILD_FROM_SCRATCH:
+        type: choice
+        description: build and deploy or just deploy?
+        options:
+        - yes
+        - no
+        default: no
+      ENV_NAME:
+        type: choice
+        description: choose env to work on
+        options:
+        - boba
+        - yoda
+        - jabba
+        - integration
+        required: true
+        default: boba
+      CONTAINER_TO_DEPLOY:
+        description: just deploy this version (example v1.2.3)
+        required: false
+      VCS_BRANCH:
+        default: master
+        required: true
+        description: branch to build
   workflow_call:
    inputs:
       repo-name:
