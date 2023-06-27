@@ -57,9 +57,3 @@ jobs:
           echo hello from octo repo!!!!!!!!!!1
           echo  running in repo:  ${{ inputs.repo-name }}
           echo test, and deploy your project.
-      
-      - name: test if scripts are working
-        run: | 
-          ls -la .github
-          bash .github/scripts/test.sh
-          practicetada/main/.github/scripts/test.sh@main
